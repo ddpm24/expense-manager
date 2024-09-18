@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+<ul>
+  <li *ngFor="let entry of expenseEntries">
+    {{ entry.item }} - {{ entry.amount }} - {{ entry.category }} - {{ entry.location }}
+  </li>
+</ul>
+
