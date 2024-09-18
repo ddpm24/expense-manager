@@ -7,15 +7,15 @@ import { ExpenseEntry } from './expense-entry'; // Importación de la interfaz
   styleUrls: ['./expense-entry.component.css']
 })
 export class ExpenseEntryComponent implements OnInit {
-  title: string = ''; // Inicializado con un string vacío
-expenseEntries: ExpenseEntry[] = []; // Inicializado con un array vacío
+  title: string = ''; 
+expenseEntries: ExpenseEntry[] = []; 
 
 
   constructor() { }
 
   ngOnInit(): void {
     this.title = "Expense Entry List";
-    this.expenseEntries = this.getExpenseEntries(); // Inicializa la lista de gastos
+    this.expenseEntries = this.getExpenseEntries(); 
   }
 
   getExpenseEntries() : ExpenseEntry[] { 
