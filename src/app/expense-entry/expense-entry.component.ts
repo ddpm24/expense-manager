@@ -1,12 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ExpenseEntry } from './expense-entry'; // Importación de la interfaz
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-expense-entry',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './expense-entry.component.html',
   styleUrls: ['./expense-entry.component.css']
 })
-export class ExpenseEntryComponent implements OnInit {
+export class ExpenseEntryComponent {
   title: string = ''; 
 expenseEntries: ExpenseEntry[] = []; 
 

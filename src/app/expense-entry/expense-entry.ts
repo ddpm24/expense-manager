@@ -1,9 +1,11 @@
-export interface ExpenseEntry {
-    id: number;
-    item: string;
-    amount: number;
-    category: string;
-    location: string;
-    spendOn: Date;
-    createdOn: Date;
-  }
+export class ExpenseEntry{
+  constructor(
+      public id: number,
+      public item: string,
+      public amount: number,
+      public category: string,
+      public location: string,
+      public spendOn:Date,
+      public createdOn:Date
+  ){}
+}
